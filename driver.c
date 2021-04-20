@@ -250,6 +250,26 @@ static int dm9051_stop(struct net_device *dev)
 	return 0;
 }
 
+#ifdef DM_RELOAD_EEPROM_EX
+void
+dm9051_reload_eeprom(board_info_t * db) {
+  iow(db, DM9051_EPCR, 1 << 5); //EPCR_REEP= 1 << 5, EPCR_ERPRR/EPCR_WEP
+  printk("dm951: reload EEPROM (Reloading)\n");
+  mdelay(1); //delay (Driver needs to clear it up after the operation completes)
+  iow(db, DM9051_EPCR, 0x0); /* Clear phyxcer write command */
+}
+#endif
+
+void
+dm9051_show_eeprom_mac(board_info_t * db) {
+  int i;
+  int offset = 0;
+  u8 rmac[6];
+  for (i = 0; i < 6; i += 2)
+    dm9051_read_eeprom(db, (offset + i) / 2, & rmac[i]);
+  printk("dm951: read eeprom MAC: %pM (%s)\n", rmac, "Reading");
+}
+
 void
 dm9051_set_mac_ops(struct net_device * ndev, void * p) {
   board_info_t * db = netdev_priv(ndev);
@@ -259,8 +279,8 @@ dm9051_set_mac_ops(struct net_device * ndev, void * p) {
   int i;
   //[param check]
   printk("dm9 [write mac permanently]\n");
-  printk("set param mac dm9051 %02x %02x %02x  %02x %02x %02x\n", s[0], s[1],
-    s[2], s[3], s[4], s[5]);
+#if 0    
+  /*
   //[dm9]				    
   iow(db, DM9051_PAR + 0, s[0]);
   iow(db, DM9051_PAR + 1, s[1]);
@@ -284,20 +304,45 @@ dm9051_set_mac_ops(struct net_device * ndev, void * p) {
       ndev -> dev_addr[2], ndev -> dev_addr[3], ndev -> dev_addr[4], ndev -> dev_addr[5]);
     return;
   }
+  */
+ #endif 
   //[eeprom]
   printk("write eeprom mac dm9051 %02x %02x %02x  %02x %02x %02x\n", s[0], s[1], s[2], s[3], s[4], s[5]);
   for (i = 0; i < 6; i += 2)
     dm9051_write_eeprom(db, (offset + i) / 2, s + i);
-  printk("[dm9 write and then read]\n");
+  //printk("[dm9 write and then read]\n");
   dm9051_show_eeprom_mac(db);
+  
+  #ifdef DM_RELOAD_EEPROM_EX
+  //[Reload into dm9051 registers 10H~15H]
+  printk("dm9 [reload eeprom dm9051]\n");
+  dm9051_reload_eeprom(db);
+  
+  for (i = 0; i < 6; i++) {
+    ndev -> dev_addr[i] = ior(db, DM9051_PAR + i);
+  }
+  //[check mac reg]
+  for (i = 0; i < 6; i++) {
+    if (ndev -> dev_addr[i] != s[i]) {
+      break;
+    }
+  }
+  if (i != 6) {
+    printk("dm9 set mac(but not as parameters) chip mac %02x %02x %02x  %02x %02x %02x [Can't write]\n", ndev -> dev_addr[0], ndev -> dev_addr[1],
+      ndev -> dev_addr[2], ndev -> dev_addr[3], ndev -> dev_addr[4], ndev -> dev_addr[5]);
+    return;
+  }
+   printk("dm951: reload eeprom MAC: %pM (%s)\n", ndev -> dev_addr, "Reloading");
+   printk("[dm9 reload eeprom OK.]\n");
+  #endif
 }
 
 int
 dm9051_set_mac_address(struct net_device *dev, void *p)
 {
 	char *s = p;
-	printk("dm9051_set_mac_address %x %x %x  %x %x %x\n", s[0],s[1],s[2],s[3],s[4],s[5]);
-	printk("dm9051_set_mac_address (%02x %02x)  %02x %02x %02x  %02x %02x %02x\n", s[0], s[1], s[2], s[3], s[4], s[5], s[6], s[7]);
+	//printk("dm9051_set_mac_address %x %x %x  %x %x %x\n", s[0],s[1],s[2],s[3],s[4],s[5]);
+	//printk("dm9051_set_mac_address (%02x %02x)  %02x %02x %02x  %02x %02x %02x\n", s[0], s[1], s[2], s[3], s[4], s[5], s[6], s[7]);
 	dm9051_set_mac_ops(dev, s + 2);
 	return eth_mac_addr(dev, p);
 }

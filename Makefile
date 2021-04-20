@@ -23,7 +23,7 @@ default:
 	$(MAKE) -C $(KERNELDIR) M=$(PWD)  
 
 clean:
-	rm -rf *.ko *.o *~ core .depend .*.cmd *.mod.c .tmp_versions .*.o.d *.symvers *.order
+	rm -rf *.tmp *.o *~ core .depend .*.cmd *.mod.c .tmp_versions .*.o.d *.symvers *.order
 
 install:
 	sudo insmod dm9051.ko
