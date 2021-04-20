@@ -1,0 +1,58 @@
+//Case-23
+//  	#define DTS_CONF_YES
+//		#define DM_CONF_MODULE
+//		//#define DM_CONF_INTERRUPT (Commented)
+//		#define SUPP_CONF_SPI_DMA_YES (Selected, to be dsyn)
+//		#define DM_CONF_1024_BUF_CASE_YES  (Selected, to be 1024_buf)
+
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.321934] [dm951_s_insmod].s 
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.321947]   --
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.321958]   --
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.321968]   --
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.321979] --00.e--
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.321986]   --
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.321991]   --
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.321999]   --
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.322009] dm9051, DRV [ *conf_dts: yes]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.322016] dm9051, DRV [ *conf_mod: yes]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.322027] dm9051, DRV [ *conf_INT: no]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.322042] dm9051, SPI [ *SUPP conf_dma_sync: yes]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.322055] dm9051, SPI [ *Rx func: 1024-buf]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.322069] dm9051, SPI [ *Tx func: 1024-buf]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.322078] dm9051 Driver loaded, V4.14.79-KT.POLL-2.2zcd.R1.201910 (LOOP_XMIT)
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.322083] [dm951_s_insmod].e
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.322424] [dm9051_i-probe].s --------- 01.s ---------
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.329707] [ *dm9051 DRV ] spi mode[= dma] using db->spi_tx_buf = dma_alloc_coherent(PAGE_SIZE, &db->spi_tx_dma)
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.329726] [ *dm9051 DRV ] spi mode[= dma] using 'enable_dma', enable_dma = 1
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.334049] [ *dm9051 dts: yes] /soc/spi@7e204000/dm9051@0 spi-max-frequency[= 15600000]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.334060] [ *dm9051 dts: yes] spi bus_num[= 0]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.334065] [ *dm9051 dts: yes] spi  spi_cs[= 1]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.334112] dm905.MOSI.p.[2a][..]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.334117] dm905.MISO.e.[..][51]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.334151] dm905.MOSI.p.[2b][..]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.334155] dm905.MISO.e.[..][90]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.334304] dm951: at MAC: 00:60:6e:90:51:ee (DBG-0)
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.334308] [dm9051_eth(n)-reg-netdev].s --------- 01.m1 ---------
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.335224] [dm9051_(eth1)-reg-netdev].s --------- 01.m2 ---------
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.335235] dm951: at MAC: 00:60:6e:90:51:ee (DBG-1)
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.335241] dm951 eth1: at MAC: 00:60:6e:90:51:ee (eeprom2chip.0)
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.335248] dm951 eth1: bus_num 0, spi_cs 1
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.477900] iowPHY[04 05e1]
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.483381] ior[REG39H][01] (b0: 1)(------- active low -------)
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.483423] [dm951_open].POLL.s -------
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.483476] [dm951_open].[before-int_reg_start (IMR 80 ) statis nSCH_INT= 0] -------
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.483476] 
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.483524] [dm951_open].POLL.e -------
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.483919] [dm9051_rx_work] ------- 03.s.first in. ------
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.484003] [dm9051_rx_work] ------- 03.s. c00/c00. ------
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.484027] [DM9051.carrier] Link Status is: 0
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.484081] [DM9051.carrier] Link Status is: 0
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.484813] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.488769] [DM9051.carrier] nsr 00, link= 0 (try 250)
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.496417] [DM9051.carrier] nsr 00, link= 0 (try 500)
+Nov  6 13:32:42 raspberrypi_int kernel: [182959.503758] [DM9051.carrier] nsr 00, link= 0 (try 750)
+Nov  6 13:32:44 raspberrypi_int kernel: [182961.200301] 
+Nov  6 13:32:44 raspberrypi_int kernel: [182961.200301] [DM9051.carrier] Link Status is: 1 nsr 40 [SCHEDU cnt 121531. try 0]
+Nov  6 13:32:44 raspberrypi_int kernel: [182961.200322] [DM9051.phy_poll] Link Status is: 1
+Nov  6 13:32:44 raspberrypi_int kernel: [182961.200563] IPv6: ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+

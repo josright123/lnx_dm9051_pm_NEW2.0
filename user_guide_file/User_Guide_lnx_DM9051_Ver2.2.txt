@@ -1,0 +1,81 @@
+
+ Linux DM9051 driver Ver2,2
+ Davicom Semiconductor,Inc.
+ 20210116 Joseph CHANG 
+ 工程使用指引~
+
+ (1)設定檔
+  [conf_ver.h],決定驅動樣板
+   - 設定檔說明
+   - 基於工程需求,可以選擇如下,在conf_ver.h添加#define即可開啟:
+     # [編譯生成,核心模組型式] . DM_CONF_MODULE
+     # [裝置設置,DTS方式]      . DTS_CONF_YES
+     # [使用中斷,否則輪詢]     . DM_CONF_INTERRUPT
+     # [減速(偵錯用)]          . DM_CONF_1024_BUF_CASE_YES
+     # [處理器客製化(聯發科)]  . MTK_CONF_SPI_DMA_YES
+     # [處理器客製化(高通)]    . QCOM_CONF_BOARD_YES
+      *案例1
+       使用高通cpu,輪詢模式,DTS裝置設置,靜態核心模組
+        #define DTS_CONF_YES
+        #define QCOM_CONF_BOARD_YES
+      *案例2(*1)
+       使用博通cpu,輪詢模式,動態核心模組  
+        #define DM_CONF_MODULE
+      *案例3
+       使用博通cpu,中斷模式,DTS裝置設置,動態核心模組  
+        #define DM_CONF_MODULE
+        #define DTS_CONF_YES
+        #define DM_CONF_INTERRUPT
+
+      (*1)案例2為釋出驅動默認的組態設置.
+
+ (2)調適程序檔
+  [custom_gpio_dm9051.c],客製化程序
+  [dm9051.c],驅動主結構程序
+  [driver.c],驅動主結構程序
+  [sub_dm9051.c],驅動主結構延伸程序
+  [spi_dm9051.c],驅動主結構延伸程序
+
+ (3)Davicom維護程序檔
+  [int_dm9051.c],中斷程序
+  [skb_rx.c],送收程序
+   等
+
+ (4)設定檔及程序檔說明
+
+     @ 設定檔
+     [conf_ver.h]
+       因應硬件有限制,而添加 #ifdef QCOM_TX_DWORD_BOUNDARY
+
+     @ 客製化程序
+     [custom_gpio_dm9051.c]
+     ---> 
+       客製化,主要和硬件的管腳使用有關.
+
+     @ 驅動主結構
+     [dm9051.c] 
+       主結構
+     [driver.c] 
+       主要功能函數,流程已完善,只在需要配合修改時才添加調用其他程序的流程.
+
+     @ 主結構延伸程序
+     [sub_dm9051.c] 
+     ---> 
+       調用dm9051_outblk送包時,可更改包內容,以幫助除錯.
+     [spi_dm9051.c]
+     ---> 
+       用spi_sync進行送收,需排查問題時,可暫時性改成一字節一字節的送收.
+       另解決問題時,添加 #define stdTX 	std_write_tx_buf_dword_boundary
+
+     @ 中斷及送收程
+     [int_dm9051.c, skb_rx.c, ...等]
+       流程已完善.
+
+ 提示: 依規劃與實務經驗,只需編輯(1)設定檔,即可讓Linux系統目標板的DM9051連網運作,
+   這設定檔即conf_ver.h.若還不行,僅須依客戶硬件需求修改(2)調適程序檔,使連網運作.
+   若還無法成功,可洽Davicom技術支持,Davicom技術支持主要也是修改(2)調適程序檔,
+   以排查問題!這些調適程序檔分別是 custom_gpio_dm9051.c, dm9051.c, driver.c,
+   sub_dm9051.c 及 spi_dm9051.c等.
+       
+
+

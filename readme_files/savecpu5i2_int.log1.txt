@@ -1,0 +1,745 @@
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923907] [dm951_s_insmod].s 
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923914]   --
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923919]   --
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923924]   --
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923928] --00.e--
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923932]   --
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923937]   --
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923942]   --
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923949] dm9051, DRV [ *conf_dts: no]
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923955] dm9051, DRV [ *conf_mod: yes]
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923961] dm9051, DRV [ *conf_INT: yes]
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923966] dm9051, SPI [ *SUPP conf_dma_sync: no]
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923972] dm9051, SPI [ *Rx func: 0-buf]
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923977] dm9051, SPI [ *Tx func: 0-buf]
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.923984] dm9051 Driver loaded, V4.14.79-KT.INT-2.2zcd.R2b2_savecpu5i2.201911 (LOOP_XMIT)
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.924346] [dm951_s_insmod].e
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.924459] [dm9051_i-probe].s --------- 01.s ---------
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.924506] dm9051 Driver spi_setup()
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.924522] [ *dm9051 DRV ] spi mode[= std] using kmalloc, TxDatBuf[] or std_alloc TxDatBuf
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.935353] [ *dm9051 dts: no] CONFIG SPI speed[= 15600000]
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.935370] [ *dm9051 dts: no] spi bus_num[= 0]
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.935376] [ *dm9051 dts: no] spi  spi_cs[= 1]
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.935427] dm905.MOSI.p.[2a][..]
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.935434] dm905.MISO.e.[..][51]
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.935460] dm905.MOSI.p.[2b][..]
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.935466] dm905.MISO.e.[..][90]
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.935589] dm951: at MAC: 00:60:6e:90:51:ee (DBG-0)
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.935595] [dm9051_eth(n)-reg-netdev].s --------- 01.m1 ---------
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.936807] [dm9051_(eth1)-reg-netdev].s --------- 01.m2 ---------
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.936822] dm951: at MAC: 00:60:6e:90:51:ee (DBG-1)
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.936831] dm951 eth1: at MAC: 00:60:6e:90:51:ee (eeprom2chip.0)
+Dec  5 16:12:00 raspberrypi_int kernel: [611268.936840] dm951 eth1: bus_num 0, spi_cs 1
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.073914] dm9.[int_get_attri].s
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.073931] [ *dm9051 CONST ] dm9051 gpio_request: pin 26, desc processer_int_pin
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.073959] [ *dm9051 CONST ] interrupts gpio-pin= 26
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.073970] [ *dm9051 spi_device * ] gpio_to_irq()= 169
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.073975] [ *dm9051 CONST ] interrupts IRQ Trigger Type[=IRQF_TRIGGER_LOW] LEVEL_LOW
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.073979] dm9.[int_get_attri].e
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.073982] dm9.[dm9051_open_c].s
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.079255] iowPHY[04 05e1]
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.083682] ior[REG39H][01] (b0: 1)(------- active low -------)
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.083686] dm9.[dm9051_open_c].e
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.083690] dm9.[int_get_begin].s
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.083695] (dm9051 Mapped gpio_to_irq() IRQ no : 169)
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.083745] [DBG] dm9051 request irq then immediately, disable_irq_nosync()
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.083752] [DBG] dm9051 request irq (169), ret= 0 (must be zero to succeed)
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.083759] eth1: dm9051spi at isNO_IRQ 169 MAC: 00:60:6e:90:51:ee
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.083764] dm9.[int_get_begin].e
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.083791] [dm951_open].INT_EN.s -------
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.083842] [dm951_open].[before-int_reg_start (IMR 80 ) statis nSCH_INT= 0] -------
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.083842] 
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.083883] [dm951_open].INT_EN.e -------
+Dec  5 16:12:00 raspberrypi_int kernel: [611269.084194] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.831312] 
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.831327] [dm9]
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.831332] [dm951_irq][-].in
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.831347] [dm951_irq][-].disable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.831367] [dm951_irq][1].out
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.831587] [dm9IMR].[80].dis ------- nINT= 1
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.831596] [dm9051_rx_work] ------- 03.s.first in. ------
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.831604] [dm9051_rx_work] ------- 03.s. 0/0. ------
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.831690] 
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.831690] [DM9051.carrier] Link Status is: 1 nsr 40 [SCHEDU cnt 0. try 0]
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.831707] [DM9051.phy_poll] Link Status is: 1
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.832168] [dm9rx   0].[08 06]
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.832498] [dm9rx   1].[08 06]
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.832793] [dm951_irq][1].enable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.832839] [dm9IMR].[81].ena ------- nINT= 1
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.832896] IPv6: ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.874935] [DM9051_START_XMIT 0][1]/[25].s
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.874981] [DM9051_START_XMIT 1][1]/[25].e
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.923834] 
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.923851] [dm951_irq][-].in
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.923868] [dm951_irq][-].disable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.923927] [dm951_irq][2].out
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.924106] [dm9IMR].[80].dis ------- nINT= 2
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.924495] [dm9rx   2].[08 00]
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.924924] [dm951_irq][2].enable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.924978] [dm9IMR].[81].ena ------- nINT= 2
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.936198] 
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.936221] [dm951_irq][-].in
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.936241] [dm951_irq][-].disable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.936325] [dm951_irq][3].out
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.936647] [dm9IMR].[80].dis ------- nINT= 3
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.937184] [dm9rx   3].[08 06]
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.937822] [dm951_irq][3].enable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611270.937925] [dm9IMR].[81].ena ------- nINT= 3
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.019005] 
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.019030] [dm951_irq][-].in
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.019052] [dm951_irq][-].disable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.019115] [dm951_irq][4].out
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.020040] [dm9IMR].[80].dis ------- nINT= 4
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.020541] [dm9rx   4].[08 06]
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.021030] [dm951_irq][4].enable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.021091] [dm9IMR].[81].ena ------- nINT= 4
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.069587] 
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.069608] [dm951_irq][-].in
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.069626] [dm951_irq][-].disable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.069689] [dm951_irq][5].out
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.069924] [dm9IMR].[80].dis ------- nINT= 5
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.070385] [dm9rx   5].[08 06]
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.071048] [dm951_irq][5].enable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.071136] [dm9IMR].[81].ena ------- nINT= 5
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.105038] [DM9051_START_XMIT 1][5]/[25].s
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.105056] [DM9051_START_XMIT 2][5]/[25].e
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.185602] 
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.185618] [dm951_irq][-].in
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.185633] [dm951_irq][-].disable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.185670] [dm951_irq][6].out
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.185845] [dm9IMR].[80].dis ------- nINT= 6
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.186155] [dm9rx   6].[08 06]
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.186471] [dm951_irq][6].enable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.186510] [dm9IMR].[81].ena ------- nINT= 6
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.257979] 
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.258005] [dm951_irq][-].in
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.258031] [dm951_irq][-].disable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.258090] [dm951_irq][7].out
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.258372] [dm9IMR].[80].dis ------- nINT= 7
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.259140] [dm9rx   7].[88 6f]
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.259942] [dm951_irq][7].enable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.259985] [dm9IMR].[81].ena ------- nINT= 7
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.290987] 
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.291001] [dm951_irq][-].in
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.291019] [dm951_irq][-].disable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.291099] [dm951_irq][8].out
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.291309] [dm9IMR].[80].dis ------- nINT= 8
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.291865] [dm9rx   8].[08 06]
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.292280] [dm951_irq][8].enable_irq
+Dec  5 16:12:02 raspberrypi_int kernel: [611271.292346] [dm9IMR].[81].ena ------- nINT= 8
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.362976] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.362998] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.363156] [dm9IMR].[80].dis ------- nINT= 9
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.363474] [dm9rx   9].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.363763] [dm951_irq][9].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.363823] [dm9IMR].[81].ena ------- nINT= 9
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.425565] [DM9051_START_XMIT 2][9]/[25].s
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.425608] [DM9051_START_XMIT 3][9]/[25].e
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.436783] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.436806] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.436962] [dm9IMR].[80].dis ------- nINT= 10
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.438355] [dm9rx  10].[08 00]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.438725] [dm951_irq][10].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.438768] [dm9IMR].[81].ena ------- nINT= 10
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.459372] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.459394] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.459553] [dm9IMR].[80].dis ------- nINT= 11
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.460044] [dm9rx  11].[08 00]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.460229] [dm951_irq][11].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.460259] [dm9IMR].[81].ena ------- nINT= 11
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.552157] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.552180] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.552349] [dm9IMR].[80].dis ------- nINT= 12
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.552811] [dm9rx  12].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.553114] [dm951_irq][12].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.553184] [dm9IMR].[81].ena ------- nINT= 12
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.585260] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.585282] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.585382] [dm9IMR].[80].dis ------- nINT= 13
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.585646] [dm9rx  13].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.585850] [dm9rx  14].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.586030] [dm951_irq][13].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.586061] [dm9IMR].[81].ena ------- nINT= 13
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.625694] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.625718] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.625863] [dm9IMR].[80].dis ------- nINT= 14
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.626127] [dm9rx  15].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.626385] [dm9rx  16].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.626667] [dm951_irq][14].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.626703] [dm9IMR].[81].ena ------- nINT= 14
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.635189] [DM9051_START_XMIT 3][14]/[25].s
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.635225] [DM9051_START_XMIT 4][14]/[25].e
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.636564] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.636599] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.636880] [dm9IMR].[80].dis ------- nINT= 15
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.637832] [dm9rx  17].[08 00]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.638136] [dm951_irq][15].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.638184] [dm9IMR].[81].ena ------- nINT= 15
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.638434] [DM9051_START_XMIT 4][15]/[25].s
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.638467] [DM9051_START_XMIT 5][15]/[25].e
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.648537] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.648559] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.648725] [dm9IMR].[80].dis ------- nINT= 16
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.649015] [dm9rx  18].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.649381] [dm951_irq][16].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.649464] [dm9IMR].[81].ena ------- nINT= 16
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.656552] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.656584] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.656820] [dm9IMR].[80].dis ------- nINT= 17
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.657218] [dm9rx  19].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.657759] [dm951_irq][17].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.657831] [dm9IMR].[81].ena ------- nINT= 17
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.667788] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.667813] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.667965] [dm9IMR].[80].dis ------- nINT= 18
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.668505] [dm9rx  20].[08 00]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.668774] [dm951_irq][18].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.668812] [dm9IMR].[81].ena ------- nINT= 18
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.725076] [DM9051_START_XMIT 5][18]/[25].s
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.725113] [DM9051_START_XMIT 6][18]/[25].e
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.824979] [DM9051_START_XMIT 6][18]/[25].s
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.825029] [DM9051_START_XMIT 7][18]/[25].e
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.831372] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.831409] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.831862] [dm9IMR].[80].dis ------- nINT= 19
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.832335] [dm9rx  21].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.832855] [dm9rx  22].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.833205] [dm951_irq][19].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.833275] [dm9IMR].[81].ena ------- nINT= 19
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.979508] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.979534] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.979718] [dm9IMR].[80].dis ------- nINT= 20
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.981157] [dm9rx  23].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.981556] [dm951_irq][20].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611271.981606] [dm9IMR].[81].ena ------- nINT= 20
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.145093] [DM9051_START_XMIT 7][20]/[25].s
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.145112] [DM9051_START_XMIT 8][20]/[25].e
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.146246] [DM9051_START_XMIT 8][20]/[25].s
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.146258] [DM9051_START_XMIT 9][20]/[25].e
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.174926] [DM9051_START_XMIT 9][20]/[25].s
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.174958] [DM9051_START_XMIT 10][20]/[25].e
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.184918] [DM9051_START_XMIT 10][20]/[25].s
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.184943] [DM9051_START_XMIT 11][20]/[25].e
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.271746] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.271777] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.272040] [dm9IMR].[80].dis ------- nINT= 21
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.272382] [dm9rx  24].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.272763] [dm9rx  25].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.273007] [dm951_irq][21].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.273051] [dm9IMR].[81].ena ------- nINT= 21
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.290941] 
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.290963] [dm951_irq][-].disable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.291081] [dm9IMR].[80].dis ------- nINT= 22
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.291327] [dm9rx  26].[08 06]
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.291664] [dm951_irq][22].enable_irq
+Dec  5 16:12:03 raspberrypi_int kernel: [611272.291697] [dm9IMR].[81].ena ------- nINT= 22
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.309921] [DM9051_START_XMIT 11][22]/[25].s
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.309959] [DM9051_START_XMIT 12][22]/[25].e
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.379443] 
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.379470] [dm951_irq][-].disable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.379742] [dm9IMR].[80].dis ------- nINT= 23
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.380059] [dm9rx  27].[08 06]
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.380386] [dm951_irq][23].enable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.380473] [dm9IMR].[81].ena ------- nINT= 23
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.524296] 
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.524318] [dm951_irq][-].disable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.524482] [dm9IMR].[80].dis ------- nINT= 24
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.524763] [dm9rx  28].[08 06]
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.525112] [dm951_irq][24].enable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.525162] [dm9IMR].[81].ena ------- nINT= 24
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.560771] [DM9051_START_XMIT 12][24]/[25].s
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.560804] [DM9051_START_XMIT 13][24]/[25].e
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.614340] 
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.614362] [dm951_irq][-].in
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.614384] [dm951_irq][-].disable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.614456] [dm951_irq][25].out
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.614925] [dm9IMR].[80].dis ------- nINT= 25
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.615382] [dm9rx  29].[08 06]
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.615922] [dm9rx  30].[08 06]
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.616389] [dm951_irq][25].enable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.616571] [dm9IMR].[81].ena ------- nINT= 25
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.649056] 
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.649102] [dm951_irq][-].disable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.649402] [dm9IMR].[80].dis ------- nINT= 26
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.650841] [dm9rx  31].[08 00]
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.651584] [dm951_irq][26].enable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.651809] [dm9IMR].[81].ena ------- nINT= 26
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.685294] 
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.685317] [dm951_irq][-].disable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.685392] [dm9IMR].[80].dis ------- nINT= 27
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.685781] [dm9rx  32].[08 00]
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.686121] [dm9rx  33].[08 00]
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.686504] [dm951_irq][27].enable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.686592] [dm9IMR].[81].ena ------- nINT= 27
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.715586] 
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.715625] [dm951_irq][-].disable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.716034] [dm9IMR].[80].dis ------- nINT= 28
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.717076] [dm9rx  34].[08 00]
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.717857] [dm951_irq][28].enable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.718045] [dm9IMR].[81].ena ------- nINT= 28
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.822961] 
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.822987] [dm951_irq][-].disable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.823258] [dm9IMR].[80].dis ------- nINT= 29
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.823841] [dm9rx  35].[08 06]
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.824383] [dm951_irq][29].enable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611272.824502] [dm9IMR].[81].ena ------- nINT= 29
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.046742] 
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.046763] [dm951_irq][-].disable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.046896] [dm9IMR].[80].dis ------- nINT= 30
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.047334] [dm9rx  36].[08 06]
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.047841] [dm951_irq][30].enable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.047903] [dm9IMR].[81].ena ------- nINT= 30
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.095608] 
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.095636] [dm951_irq][-].disable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.095891] [dm9IMR].[80].dis ------- nINT= 31
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.096502] [dm9rx  37].[08 00]
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.096898] [dm9rx  38].[08 00]
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.097260] [dm951_irq][31].enable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.097330] [dm9IMR].[81].ena ------- nINT= 31
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.192011] 
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.192033] [dm951_irq][-].disable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.192162] [dm9IMR].[80].dis ------- nINT= 32
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.192636] [dm9rx  39].[08 06]
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.193044] [dm9rx  40].[08 06]
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.193499] [dm951_irq][32].enable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.193585] [dm9IMR].[81].ena ------- nINT= 32
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.293467] 
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.293491] [dm951_irq][-].disable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.293712] [dm9IMR].[80].dis ------- nINT= 33
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.294126] [dm9rx  41].[08 06]
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.294679] [dm951_irq][33].enable_irq
+Dec  5 16:12:04 raspberrypi_int kernel: [611273.294742] [dm9IMR].[81].ena ------- nINT= 33
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.330270] 
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.330292] [dm951_irq][-].disable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.330504] [dm9IMR].[80].dis ------- nINT= 34
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.330981] [dm9rx  42].[08 06]
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.331510] [dm951_irq][34].enable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.331602] [dm9IMR].[81].ena ------- nINT= 34
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.383404] 
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.383434] [dm951_irq][-].disable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.383802] [dm9IMR].[80].dis ------- nINT= 35
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.384475] [dm9rx  43].[08 06]
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.385573] [dm951_irq][35].enable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.385712] [dm9IMR].[81].ena ------- nINT= 35
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.524297] 
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.524319] [dm951_irq][-].disable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.524547] [dm9IMR].[80].dis ------- nINT= 36
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.525635] [dm9rx  44].[08 06]
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.526193] [dm951_irq][36].enable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.526260] [dm9IMR].[81].ena ------- nINT= 36
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.614336] 
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.614360] [dm951_irq][-].disable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.614598] [dm9IMR].[80].dis ------- nINT= 37
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.615785] [dm9rx  45].[08 06]
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.616349] [dm951_irq][37].enable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.616454] [dm9IMR].[81].ena ------- nINT= 37
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.625839] 
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.625851] [dm951_irq][-].disable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.625949] [dm9IMR].[80].dis ------- nINT= 38
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.626320] [dm9rx  46].[08 06]
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.626795] [dm951_irq][38].enable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.626860] [dm9IMR].[81].ena ------- nINT= 38
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.722629] 
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.722652] [dm951_irq][-].disable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.722840] [dm9IMR].[80].dis ------- nINT= 39
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.723945] [dm9rx  47].[08 00]
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.724337] [dm9rx  48].[08 00]
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.724722] [dm951_irq][39].enable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.724785] [dm9IMR].[81].ena ------- nINT= 39
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.859231] 
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.859255] [dm951_irq][-].disable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.859566] [dm9IMR].[80].dis ------- nINT= 40
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.860873] [dm9rx  49].[08 06]
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.861645] [dm951_irq][40].enable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.861717] [dm9IMR].[81].ena ------- nINT= 40
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.878665] 
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.878687] [dm951_irq][-].disable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.878839] [dm9IMR].[80].dis ------- nINT= 41
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.879218] [dm9rx  50].[08 06]
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.879723] [dm951_irq][41].enable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611273.879782] [dm9IMR].[81].ena ------- nINT= 41
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.052257] 
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.052282] [dm951_irq][-].disable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.052499] [dm9IMR].[80].dis ------- nINT= 42
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.053563] [dm9rx  51].[08 06]
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.054129] [dm951_irq][42].enable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.054193] [dm9IMR].[81].ena ------- nINT= 42
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.132537] 
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.132558] [dm951_irq][-].disable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.132737] [dm9IMR].[80].dis ------- nINT= 43
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.133139] [dm9rx  52].[08 00]
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.133347] [dm951_irq][43].enable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.133383] [dm9IMR].[81].ena ------- nINT= 43
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.133452] 
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.133459] [dm951_irq][-].disable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.133748] [dm9rx  53].[08 00]
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.133927] [dm951_irq][44].enable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.133957] [dm9IMR].[81].ena ------- nINT= 44
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.190399] 
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.190424] [dm951_irq][-].disable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.190615] [dm9IMR].[80].dis ------- nINT= 45
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.190948] [dm9rx  54].[08 06]
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.191239] [dm9rx  55].[08 06]
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.191506] [dm951_irq][45].enable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.191563] [dm9IMR].[81].ena ------- nINT= 45
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.281440] 
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.281463] [dm951_irq][-].disable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.281630] [dm9IMR].[80].dis ------- nINT= 46
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.282591] [dm9rx  56].[08 06]
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.282934] [dm951_irq][46].enable_irq
+Dec  5 16:12:05 raspberrypi_int kernel: [611274.282974] [dm9IMR].[81].ena ------- nINT= 46
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.356188] 
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.356211] [dm951_irq][-].disable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.356379] [dm9IMR].[80].dis ------- nINT= 47
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.356751] [dm9rx  57].[08 00]
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.357019] [dm951_irq][47].enable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.357054] [dm9IMR].[81].ena ------- nINT= 47
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.560874] 
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.560896] [dm951_irq][-].disable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.561038] [dm9IMR].[80].dis ------- nINT= 48
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.561955] [dm9rx  58].[08 06]
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.562249] [dm951_irq][48].enable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.562291] [dm9IMR].[81].ena ------- nINT= 48
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.574430] 
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.574452] [dm951_irq][-].disable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.574610] [dm9IMR].[80].dis ------- nINT= 49
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.575051] [dm9rx  59].[08 00]
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.575310] [dm9rx  60].[08 00]
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.575620] [dm951_irq][49].enable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.575678] [dm9IMR].[81].ena ------- nINT= 49
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.598613] 
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.598637] [dm951_irq][-].disable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.598791] [dm9IMR].[80].dis ------- nINT= 50
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.599091] [dm9rx  61].[08 06]
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.599466] [dm951_irq][50].enable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.599513] [dm9IMR].[81].ena ------- nINT= 50
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.625902] 
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.625931] [dm951_irq][-].disable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.626096] [dm9IMR].[80].dis ------- nINT= 51
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.626467] [dm9rx  62].[08 06]
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.626919] [dm951_irq][51].enable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.626976] [dm9IMR].[81].ena ------- nINT= 51
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.656352] 
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.656396] [dm951_irq][-].disable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.656898] [dm9IMR].[80].dis ------- nINT= 52
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.657568] [dm9rx  63].[08 06]
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.658187] [dm951_irq][52].enable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.658249] [dm9IMR].[81].ena ------- nINT= 52
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.798589] 
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.798626] [dm951_irq][-].disable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.798984] [dm9IMR].[80].dis ------- nINT= 53
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.799637] [dm9rx  64].[08 00]
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.800124] [dm9rx  65].[08 00]
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.800540] [dm9rx  66].[08 00]
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.800923] [dm951_irq][53].enable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.800981] [dm9IMR].[81].ena ------- nINT= 53
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.984156] 
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.984177] [dm951_irq][-].disable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.984321] [dm9IMR].[80].dis ------- nINT= 54
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.984609] [dm9rx  67].[08 00]
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.984890] [dm951_irq][54].enable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.984937] [dm9IMR].[81].ena ------- nINT= 54
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.985055] 
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.985065] [dm951_irq][-].disable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.985087] [dm951_irq][55].enable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.985098] 
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.985104] [dm951_irq][-].disable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.985136] [dm9IMR].[81].ena ------- nINT= 56
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.985169] [dm9IMR].[80].dis ------- nINT= 56
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.985470] [dm9rx  68].[08 00]
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.985716] [dm951_irq][56].enable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611274.985752] [dm9IMR].[81].ena ------- nINT= 56
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.052306] 
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.052332] [dm951_irq][-].disable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.052698] [dm9IMR].[80].dis ------- nINT= 57
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.053164] [dm9rx  69].[08 06]
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.053829] [dm951_irq][57].enable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.053913] [dm9IMR].[81].ena ------- nINT= 57
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.281517] 
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.281538] [dm951_irq][-].disable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.281677] [dm9IMR].[80].dis ------- nINT= 58
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.282095] [dm9rx  70].[08 06]
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.282632] [dm951_irq][58].enable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.282698] [dm9IMR].[81].ena ------- nINT= 58
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.288586] 
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.288601] [dm951_irq][-].disable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.288714] [dm9IMR].[80].dis ------- nINT= 59
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.289085] [dm9rx  71].[08 06]
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.289541] [dm951_irq][59].enable_irq
+Dec  5 16:12:06 raspberrypi_int kernel: [611275.289597] [dm9IMR].[81].ena ------- nINT= 59
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.364195] 
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.364238] [dm951_irq][-].disable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.364957] [dm9IMR].[80].dis ------- nINT= 60
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.366072] [dm951_irq][60].enable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.366168] [dm9IMR].[81].ena ------- nINT= 60
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.386130] 
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.386157] [dm951_irq][-].disable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.386948] [dm951_irq][61].enable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.485706] 
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.485726] [dm951_irq][-].disable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.486472] [dm951_irq][62].enable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.524312] 
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.524338] [dm951_irq][-].disable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.525267] [dm951_irq][63].enable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.563524] 
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.563548] [dm951_irq][-].disable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.564302] [dm951_irq][64].enable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.691476] 
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.691499] [dm951_irq][-].disable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.692559] [dm951_irq][65].enable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.928375] 
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.928396] [dm951_irq][-].disable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611275.929743] [dm951_irq][66].enable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611276.148452] 
+Dec  5 16:12:07 raspberrypi_int kernel: [611276.148474] [dm951_irq][-].disable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611276.149954] [dm951_irq][67].enable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611276.187202] 
+Dec  5 16:12:07 raspberrypi_int kernel: [611276.187229] [dm951_irq][-].disable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611276.188316] [dm951_irq][68].enable_irq
+Dec  5 16:12:07 raspberrypi_int kernel: [611276.291903] 
+Dec  5 16:12:07 raspberrypi_int kernel: [611276.291943] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.294951] [dm951_irq][69].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.363775] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.363795] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.364709] [dm951_irq][70].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.390268] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.390293] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.391153] [dm951_irq][71].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.491343] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.491381] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.492969] [dm951_irq][72].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.524301] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.524324] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.527682] [dm951_irq][73].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.552379] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.552414] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.553287] [dm951_irq][74].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.623518] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.623540] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.624628] [dm951_irq][75].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.696727] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.696763] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.697900] [dm951_irq][76].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.802465] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.802487] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.803977] [dm951_irq][77].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.930940] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.930962] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611276.931706] [dm951_irq][78].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.046666] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.046691] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.050084] [dm951_irq][79].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.117888] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.117922] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.118974] [dm951_irq][80].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.119262] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.119272] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.120030] [dm951_irq][81].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.185562] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.185593] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.186660] [dm951_irq][82].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.273420] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.273442] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.275150] [dm951_irq][83].enable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.291741] 
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.291763] [dm951_irq][-].disable_irq
+Dec  5 16:12:08 raspberrypi_int kernel: [611277.292389] [dm951_irq][84].enable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.363748] 
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.363772] [dm951_irq][-].disable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.365253] [dm951_irq][85].enable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.491304] 
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.491326] [dm951_irq][-].disable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.492867] [dm951_irq][86].enable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.506430] 
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.506449] [dm951_irq][-].disable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.507117] [dm951_irq][87].enable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.524726] 
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.524745] [dm951_irq][-].disable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.525609] [dm951_irq][88].enable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.552410] 
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.552434] [dm951_irq][-].disable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.553223] [dm951_irq][89].enable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.604151] 
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.604175] [dm951_irq][-].disable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.605080] [dm951_irq][90].enable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.656582] 
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.656607] [dm951_irq][-].disable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.657373] [dm951_irq][91].enable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.661645] 
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.661662] [dm951_irq][-].disable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611277.662615] [dm951_irq][92].enable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611278.008424] 
+Dec  5 16:12:09 raspberrypi_int kernel: [611278.008444] [dm951_irq][-].disable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611278.009460] [dm951_irq][93].enable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611278.273391] 
+Dec  5 16:12:09 raspberrypi_int kernel: [611278.273411] [dm951_irq][-].disable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611278.274642] [dm951_irq][94].enable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611278.291768] 
+Dec  5 16:12:09 raspberrypi_int kernel: [611278.291788] [dm951_irq][-].disable_irq
+Dec  5 16:12:09 raspberrypi_int kernel: [611278.292474] [dm951_irq][95].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.310854] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.310876] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.311629] [dm951_irq][96].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.349985] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.350010] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.351058] [dm951_irq][97].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.364707] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.364733] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.365852] [dm951_irq][98].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.457225] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.457252] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.458126] [dm951_irq][99].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.506724] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.506750] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.507616] [dm951_irq][100].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.524298] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.524321] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.525378] [dm951_irq][101].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.558402] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.558425] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.559203] [dm951_irq][102].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.599275] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.599302] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.600180] [dm951_irq][103].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.612253] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.612276] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.613096] [dm951_irq][104].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.691315] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.691343] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.692233] [dm951_irq][105].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.805604] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.805629] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.806393] [dm951_irq][106].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.806443] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.806449] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.807048] [dm951_irq][107].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.809723] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.809737] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611278.810327] [dm951_irq][108].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611279.046620] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611279.046643] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611279.047319] [dm951_irq][109].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611279.182314] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611279.182338] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611279.183952] [dm951_irq][110].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611279.281815] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611279.281837] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611279.282739] [dm951_irq][111].enable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611279.292648] 
+Dec  5 16:12:10 raspberrypi_int kernel: [611279.292664] [dm951_irq][-].disable_irq
+Dec  5 16:12:10 raspberrypi_int kernel: [611279.293200] [dm951_irq][112].enable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.355829] 
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.355861] [dm951_irq][-].disable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.366250] [dm951_irq][113].enable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.383449] 
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.383476] [dm951_irq][-].disable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.384304] [dm951_irq][114].enable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.491294] 
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.491316] [dm951_irq][-].disable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.492179] [dm951_irq][115].enable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.524407] 
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.524430] [dm951_irq][-].disable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.525221] [dm951_irq][116].enable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.612253] 
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.612275] [dm951_irq][-].disable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.613051] [dm951_irq][117].enable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.616637] 
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.616657] [dm951_irq][-].disable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.617277] [dm951_irq][118].enable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.812302] 
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.812324] [dm951_irq][-].disable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.814077] [dm951_irq][119].enable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.825376] 
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.825392] [dm951_irq][-].disable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611279.826847] [dm951_irq][120].enable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611280.124552] 
+Dec  5 16:12:11 raspberrypi_int kernel: [611280.124576] [dm951_irq][-].disable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611280.126212] [dm951_irq][121].enable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611280.180734] 
+Dec  5 16:12:11 raspberrypi_int kernel: [611280.180761] [dm951_irq][-].disable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611280.181778] [dm951_irq][122].enable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611280.281900] 
+Dec  5 16:12:11 raspberrypi_int kernel: [611280.281922] [dm951_irq][-].disable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611280.283511] [dm951_irq][123].enable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611280.292615] 
+Dec  5 16:12:11 raspberrypi_int kernel: [611280.292628] [dm951_irq][-].disable_irq
+Dec  5 16:12:11 raspberrypi_int kernel: [611280.293136] [dm951_irq][124].enable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.364623] 
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.364646] [dm951_irq][-].disable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.366305] [dm951_irq][125].enable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.387693] 
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.387714] [dm951_irq][-].disable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.388366] [dm951_irq][126].enable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.491255] 
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.491279] [dm951_irq][-].disable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.492186] [dm951_irq][127].enable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.616611] 
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.616632] [dm951_irq][-].disable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.617941] [dm951_irq][128].enable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.625270] 
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.625285] [dm951_irq][-].disable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.626060] [dm951_irq][129].enable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.656444] 
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.656467] [dm951_irq][-].disable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611280.657255] [dm951_irq][130].enable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611281.188588] 
+Dec  5 16:12:12 raspberrypi_int kernel: [611281.188615] [dm951_irq][-].disable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611281.189582] [dm951_irq][131].enable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611281.257762] 
+Dec  5 16:12:12 raspberrypi_int kernel: [611281.257791] [dm951_irq][-].disable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611281.258793] [dm951_irq][132].enable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611281.292585] 
+Dec  5 16:12:12 raspberrypi_int kernel: [611281.292606] [dm951_irq][-].disable_irq
+Dec  5 16:12:12 raspberrypi_int kernel: [611281.293305] [dm951_irq][133].enable_irq
+Dec  5 16:12:13 raspberrypi_int kernel: [611281.476454] 
+Dec  5 16:12:13 raspberrypi_int kernel: [611281.476477] [dm951_irq][-].disable_irq
+Dec  5 16:12:13 raspberrypi_int kernel: [611281.477185] [dm951_irq][134].enable_irq
+Dec  5 16:12:13 raspberrypi_int kernel: [611281.524309] 
+Dec  5 16:12:13 raspberrypi_int kernel: [611281.524333] [dm951_irq][-].disable_irq
+Dec  5 16:12:13 raspberrypi_int kernel: [611281.525309] [dm951_irq][135].enable_irq
+Dec  5 16:12:13 raspberrypi_int kernel: [611281.625365] 
+Dec  5 16:12:13 raspberrypi_int kernel: [611281.625387] [dm951_irq][-].disable_irq
+Dec  5 16:12:13 raspberrypi_int kernel: [611281.626179] [dm951_irq][136].enable_irq
+Dec  5 16:12:13 raspberrypi_int kernel: [611282.022466] 
+Dec  5 16:12:13 raspberrypi_int kernel: [611282.022488] [dm951_irq][-].disable_irq
+Dec  5 16:12:13 raspberrypi_int kernel: [611282.023215] [dm951_irq][137].enable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611282.524309] 
+Dec  5 16:12:14 raspberrypi_int kernel: [611282.524337] [dm951_irq][-].disable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611282.525578] [dm951_irq][138].enable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611282.614184] 
+Dec  5 16:12:14 raspberrypi_int kernel: [611282.614212] [dm951_irq][-].disable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611282.615520] [dm951_irq][139].enable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611282.825640] 
+Dec  5 16:12:14 raspberrypi_int kernel: [611282.825663] [dm951_irq][-].disable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611282.826521] [dm951_irq][140].enable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611282.976416] 
+Dec  5 16:12:14 raspberrypi_int kernel: [611282.976439] [dm951_irq][-].disable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611282.977269] [dm951_irq][141].enable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.212488] 
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.212510] [dm951_irq][-].disable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.213349] [dm951_irq][142].enable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.222707] 
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.222722] [dm951_irq][-].disable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.223267] [dm951_irq][143].enable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.243382] 
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.243402] [dm951_irq][-].disable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.244106] [dm951_irq][144].enable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.253568] 
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.253593] [dm951_irq][-].disable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.254330] [dm951_irq][145].enable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.274260] 
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.274285] [dm951_irq][-].disable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.275231] [dm951_irq][146].enable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.284479] 
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.284502] [dm951_irq][-].disable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.285468] [dm951_irq][147].enable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.292694] 
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.292715] [dm951_irq][-].disable_irq
+Dec  5 16:12:14 raspberrypi_int kernel: [611283.293574] [dm951_irq][148].enable_irq
+Dec  5 16:12:15 raspberrypi_int kernel: [611283.305169] 
+Dec  5 16:12:15 raspberrypi_int kernel: [611283.305193] [dm951_irq][-].disable_irq
+Dec  5 16:12:15 raspberrypi_int kernel: [611283.305979] [dm951_irq][149].enable_irq
+Dec  5 16:12:15 raspberrypi_int kernel: [611283.315369] 
+Dec  5 16:12:15 raspberrypi_int kernel: [611283.315393] [dm951_irq][-].disable_irq
+Dec  5 16:12:15 raspberrypi_int kernel: [611283.316284] [dm951_irq][150].enable_irq
+

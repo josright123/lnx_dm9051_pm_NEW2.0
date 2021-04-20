@@ -1,0 +1,8 @@
+Dec 19 12:25:09 raspberrypi_int kernel: [156241.578616] dmfifo_reset( 11 macErr ) mac 80 ec 65 rxhdr 01 40 40 00 {Just treat as a normal-unicast}
+Dec 19 12:25:56 raspberrypi_int kernel: [156288.225833] dmfifo_reset( 11 macErr ) mac d4 31 a7 rxhdr 01 40 40 00 {Just treat as a normal-unicast}
+Dec 19 13:07:41 raspberrypi_int kernel: [158792.818325] dmfifo_reset( 11 macErr ) mac 80 ec 65 rxhdr 01 40 40 00 {Just treat as a normal-unicast}
+Dec 19 13:22:24 raspberrypi_int kernel: [159675.947138] dmfifo_reset( 11 macErr ) mac 00 00 00 rxhdr 01 40 4e 00 {Just treat as a normal-unicast}
+Dec 19 14:25:14 raspberrypi_int kernel: [163445.878400] dmfifo_reset( 11 macErr ) mac 00 00 00 rxhdr 01 40 4e 00 {Just treat as a normal-unicast}
+Dec 19 14:47:32 raspberrypi_int kernel: [164784.586583] dmfifo_reset( 11 macErr ) mac 80 ec 65 rxhdr 01 40 40 00 {Just treat as a normal-unicast}
+Dec 19 16:39:32 raspberrypi_int kernel: [171504.355788] dmfifo_reset( 11 macErr ) mac 34 1e 11 rxhdr 01 40 40 00 {Just treat as a normal-unicast}
+Dec 19 17:27:30 raspberrypi_int kernel: [174382.503083] dmfifo_reset( 11 macErr ) mac e8 0b 12 rxhdr 01 40 60 00 {Just treat as a normal-unicast}

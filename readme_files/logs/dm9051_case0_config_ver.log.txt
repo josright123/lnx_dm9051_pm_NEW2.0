@@ -1,0 +1,129 @@
+//Case-0
+//  	#define DTS_CONF_YES
+//		#define DM_CONF_MODULE
+//		#define DM_CONF_INTERRUPT
+//		#define SUPP_CONF_SPI_DMA_YES
+//		#define DM_CONF_1024_BUF_CASE_YES
+
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.806989] [dm951_s_insmod].s 
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.806997]   --
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807002]   --
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807006]   --
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807011] --00.e--
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807015]   --
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807019]   --
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807024]   --
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807031] dm9051, DRV [ *conf_dts: yes]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807036] dm9051, DRV [ *conf_mod: yes]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807042] dm9051, DRV [ *conf_INT: yes]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807047] dm9051, SPI [ *SUPP conf_dma_sync: yes]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807053] dm9051, SPI [ *Rx func: 1024-buf]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807059] dm9051, SPI [ *Tx func: 1024-buf]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807066] dm9051 Driver loaded, V4.14.79-KT.INT-2.2zcd.R1.201910 (LOOP_XMIT)
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807070] [dm951_s_insmod].e
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.807390] [dm9051_i-probe].s --------- 01.s ---------
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.818085] [ *dm9051 DRV ] spi mode[= dma] using db->spi_tx_buf = dma_alloc_coherent(PAGE_SIZE, &db->spi_tx_dma)
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.818103] [ *dm9051 DRV ] spi mode[= dma] using 'enable_dma', enable_dma = 1
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.822435] [ *dm9051 dts: yes] /soc/spi@7e204000/dm9051@0 spi-max-frequency[= 15600000]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.822450] [ *dm9051 dts: yes] spi bus_num[= 0]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.822454] [ *dm9051 dts: yes] spi  spi_cs[= 1]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.822480] dm905.MOSI.p.[2a][..]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.822484] dm905.MISO.e.[..][51]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.822502] dm905.MOSI.p.[2b][..]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.822506] dm905.MISO.e.[..][90]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.822583] dm951: at MAC: 00:60:6e:90:51:ee (DBG-0)
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.822588] [dm9051_eth(n)-reg-netdev].s --------- 01.m1 ---------
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.823502] [dm9051_(eth1)-reg-netdev].s --------- 01.m2 ---------
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.823515] dm951: at MAC: 00:60:6e:90:51:ee (DBG-1)
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.823522] dm951 eth1: at MAC: 00:60:6e:90:51:ee (eeprom2chip.0)
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.823528] dm951 eth1: bus_num 0, spi_cs 1
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.986844] iowPHY[04 05e1]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992649] ior[REG39H][01] (b0: 1)(------- active low -------)
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992663] dm9.[int_begin].s
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992726] [ *dm9051 dts ] /soc/spi@7e204000/dm9051@0 interrupts gpio-pin[= 26]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992734] [ *dm9051 spi_device * ] spi->irq value[= 169]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992740] [ *dm9051 dts ] /soc/spi@7e204000/dm9051@0 interrupts irq-type[= 8]
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992745] [ *dm9051 dts ] interrupts IRQ Trigger Type[= 8] (LEVEL LOW)
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992749] dm9051 Mapped DTS's IRQ no : 169
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992754] dm9051 request irq for DTS's IRQ Trigger Type with IRQF_TRIGGER_NONE : 0 (TRIGGER NONE)
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992758] Hence registering with IRQF_TRIGGER_NONE does NOT modify the existing configuration of the IRQ and IRQ no.
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992816] [DBG] dm9051 request irq then immediately, disable_irq_nosync()
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992824] [DBG] dm9051 request irq (169), ret= 0 (must be zero to succeed)
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992832] eth1: dm9051spi at isNO_IRQ 169 MAC: 00:60:6e:90:51:ee
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992836] dm9.[int_begin].e
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992868] [dm951_open].INT_EN.s -------
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992942] [dm951_open].[before-int_reg_start (IMR 80 ) statis nSCH_INT= 0] -------
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.992942] 
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.993014] [dm951_open].INT_EN.e -------
+Nov  5 18:31:39 raspberrypi_int kernel: [114495.993555] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Nov  5 18:31:40 raspberrypi_int kernel: [114497.696671] [dm951_irq][0].s
+Nov  5 18:31:40 raspberrypi_int kernel: [114497.696703] [dm951_irq][1].e
+Nov  5 18:31:40 raspberrypi_int kernel: [114497.696781] [dm9051_rx_work] ------- 03.s.first in. ------
+Nov  5 18:31:40 raspberrypi_int kernel: [114497.696897] [dm9051_rx_work] ------- 03.s. c4d/c00. ------
+Nov  5 18:31:40 raspberrypi_int kernel: [114497.696938] 
+Nov  5 18:31:40 raspberrypi_int kernel: [114497.696938] [DM9051.carrier] Link Status is: 1 nsr 40 [SCHEDU cnt 0. try 0]
+Nov  5 18:31:40 raspberrypi_int kernel: [114497.696956] [DM9051.phy_poll] Link Status is: 1
+Nov  5 18:31:40 raspberrypi_int kernel: [114497.702231] IPv6: ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+Nov  5 18:31:40 raspberrypi_int kernel: [114497.702839] [dm9IMR_irx_work].[int_reg_sta].e ------- int_reg_sta (IMR 81 ) statis nSCH_INT= 1 -------
+Nov  5 18:31:40 raspberrypi_int kernel: [114497.749334] [DM9051_START_XMIT 0][1]/[25].s
+Nov  5 18:31:40 raspberrypi_int kernel: [114497.749399] [DM9051_START_XMIT 1][1]/[25].e
+Nov  5 18:31:41 raspberrypi_int kernel: [114497.867131] [dm951_irq][1].s
+Nov  5 18:31:41 raspberrypi_int kernel: [114497.867201] [dm951_irq][2].e
+Nov  5 18:31:41 raspberrypi_int kernel: [114497.869097] [dm9IMR_irx_work].[int_reg_sta].e ------- int_reg_sta (IMR 81 ) statis nSCH_INT= 2 -------
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.019240] [DM9051_START_XMIT 1][2]/[25].s
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.019317] [DM9051_START_XMIT 2][2]/[25].e
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.039304] [DM9051_START_XMIT 2][2]/[25].s
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.039322] [DM9051_START_XMIT 3][2]/[25].e
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.150364] [dm951_irq][2].s
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.150455] [dm951_irq][3].e
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.152033] [dm9IMR_irx_work].[int_reg_sta].e ------- int_reg_sta (IMR 81 ) statis nSCH_INT= 3 -------
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.379212] [dm951_irq][3].s
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.379246] [dm951_irq][4].e
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.379864] [dm9IMR_irx_work].[int_reg_sta].e ------- int_reg_sta (IMR 81 ) statis nSCH_INT= 4 -------
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.430092] [DM9051_START_XMIT 3][4]/[25].s
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.430173] [DM9051_START_XMIT 4][4]/[25].e
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.440264] [dm951_irq][4].s
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.440305] [dm951_irq][5].e
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.441443] [dm9IMR_irx_work].[int_reg_sta].e ------- int_reg_sta (IMR 81 ) statis nSCH_INT= 5 -------
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.442133] [dm951_irq][5].s
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.442168] [dm951_irq][6].e
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.443212] [dm9IMR_irx_work].[int_reg_sta].e ------- int_reg_sta (IMR 81 ) statis nSCH_INT= 6 -------
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.579544] [DM9051_START_XMIT 4][6]/[25].s
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.579587] [DM9051_START_XMIT 5][6]/[25].e
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.580678] [dm951_irq][6].s
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.580717] [dm951_irq][7].e
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.581412] [dm9IMR_irx_work].[int_reg_sta].e ------- int_reg_sta (IMR 81 ) statis nSCH_INT= 7 -------
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.592962] [dm951_irq][7].s
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.592994] [dm951_irq][8].e
+Nov  5 18:31:41 raspberrypi_int kernel: [114498.593629] [dm9IMR_irx_work].[int_reg_sta].e ------- int_reg_sta (IMR 81 ) statis nSCH_INT= 8 -------
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.079372] [DM9051_START_XMIT 5][10]/[25].s
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.079392] [DM9051_START_XMIT 6][10]/[25].e
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.079896] [DM9051_START_XMIT 6][10]/[25].s
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.079920] [DM9051_START_XMIT 7][10]/[25].e
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.109237] [DM9051_START_XMIT 7][10]/[25].s
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.109296] [DM9051_START_XMIT 8][10]/[25].e
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.244494] [DM9051_START_XMIT 8][10]/[25].s
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.244538] [DM9051_START_XMIT 9][10]/[25].e
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.494600] [DM9051_START_XMIT 9][11]/[25].s
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.494634] [DM9051_START_XMIT 10][11]/[25].e
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.596723] [DM9051_START_XMIT 10][13]/[25].s
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.596766] [DM9051_START_XMIT 11][13]/[25].e
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.659265] [DM9051_START_XMIT 11][14]/[25].s
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.659305] [DM9051_START_XMIT 12][14]/[25].e
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.679390] [DM9051_START_XMIT 12][14]/[25].s
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.679425] [DM9051_START_XMIT 13][14]/[25].e
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.745831] [DM9051_START_XMIT 13][14]/[25].s
+Nov  5 18:31:42 raspberrypi_int kernel: [114499.745867] [DM9051_START_XMIT 14][14]/[25].e
+Nov  5 18:31:43 raspberrypi_int kernel: [114499.879247] [DM9051_START_XMIT 14][15]/[25].s
+Nov  5 18:31:43 raspberrypi_int kernel: [114499.879286] [DM9051_START_XMIT 15][15]/[25].e
+Nov  5 18:31:43 raspberrypi_int kernel: [114499.946667] [DM9051_START_XMIT 15][15]/[25].s
+Nov  5 18:31:43 raspberrypi_int kernel: [114499.946707] [DM9051_START_XMIT 16][15]/[25].e
+Nov  5 18:31:44 raspberrypi_int kernel: [114501.038948] [dm951_irq][24].s
+Nov  5 18:31:44 raspberrypi_int kernel: [114501.038980] [dm951_irq][25].e
+Nov  5 18:31:44 raspberrypi_int kernel: [114501.061314] [DM9051_START_XMIT 16][25]/[25].s
+Nov  5 18:31:44 raspberrypi_int kernel: [114501.061402] [DM9051_START_XMIT 17][25]/[25].e
+Nov  5 18:34:04 raspberrypi_int kernel: [114641.559126] dm_phypol 66[run-gap 1][PHY-SCHED-rx-work-OUT_OF-INT].CHK. INT.Num  1069(dis  1069), INT.Sch=  1069(en 1068).
+Nov  5 18:41:28 raspberrypi_int kernel: [115085.087407] (dm9.rxbyte [step 00]) 51, rxptrs 329c/ef5 isr 83
+Nov  5 18:41:30 raspberrypi_int kernel: [115087.133372] (dm9.rxbyte [step 01]) 51, rxptrs 388e/ef5 isr 83
+Nov  5 18:41:33 raspberrypi_int kernel: [115089.782175] (dm9.rxbyte [step 02]) 51, rxptrs 3e80/ef5 isr 87
+
