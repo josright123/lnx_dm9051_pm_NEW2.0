@@ -192,4 +192,6 @@
 
 //#define JABBER_PACKET_SUPPORT
 
+#define DM_RELOAD_EEPROM_EX //work for 'ifconfig hw ether' for reload eeprom after write eeprom.
+
 #endif

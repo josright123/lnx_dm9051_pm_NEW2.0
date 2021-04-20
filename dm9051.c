@@ -241,7 +241,52 @@ static int dm9000_get_eeprom_len(struct net_device *dev)
 	return 128;
 }
 
-static int dm9000_get_eeprom(struct net_device *dev,
+static int dm9000_get_eeprom(struct net_device * dev,
+  struct ethtool_eeprom * ee, u8 * data) {
+  #if 1
+  board_info_t * dm = to_dm9051_board(dev);
+  int offset = ee -> offset;
+  int len = ee -> len;
+  int i;
+
+  printk("[dm9051_get_eeprom]\n");
+
+  // EEPROM access is aligned to two bytes 
+  if ((len & 1) != 0 || (offset & 1) != 0)
+    return -EINVAL;
+
+  ee -> magic = DM_EEPROM_MAGIC;
+
+  for (i = 0; i < len; i += 2)
+    dm9051_read_eeprom(dm, (offset + i) / 2, data + i);
+  #endif
+  return 0;
+}
+
+static int dm9000_set_eeprom(struct net_device * dev,
+  struct ethtool_eeprom * ee, u8 * data) {
+  #if 1
+  board_info_t * dm = to_dm9051_board(dev);
+  int offset = ee -> offset;
+  int len = ee -> len;
+  int i;
+
+  printk("[dm9051_set_eeprom]\n");
+
+  // EEPROM access is aligned to two bytes 
+  if ((len & 1) != 0 || (offset & 1) != 0)
+    return -EINVAL;
+
+  if (ee -> magic != DM_EEPROM_MAGIC)
+    return -EINVAL;
+
+  for (i = 0; i < len; i += 2)
+    dm9051_write_eeprom(dm, (offset + i) / 2, data + i);
+  #endif
+  return 0;
+}
+
+/*static int dm9000_get_eeprom(struct net_device *dev,
 			     struct ethtool_eeprom *ee, u8 *data)
 {
 
@@ -287,7 +332,7 @@ static int dm9000_set_eeprom(struct net_device *dev,
 		dm9051_write_eeprom(dm, (offset + i) / 2, data + i);
 #endif		
 	return 0;
-}
+}*/
 
 static const struct ethtool_ops dm9051_ethtool_ops = {
 	.get_drvinfo		= dm9051_get_drvinfo,
